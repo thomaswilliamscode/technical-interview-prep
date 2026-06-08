@@ -1,117 +1,98 @@
 
-/*
-Problem:
-Remove all occurrences of val in-place.
-
-Return number of remaining elements.
-
-Example:
-nums = [3,2,2,3]
-val = 3
-
-Return:
-2
-
-Array becomes:
-[2,2,...]
-*/
-
-function removeElement(nums, val) {
-    // TODO:
-    // Use a write pointer.
-    // Copy values that are NOT equal to val.
-    // Return new length.
-    let write = 0; 
-    for (let read = 0; read < nums.length; read++) {
-        if (nums[read] !== val) {
-            
-        }
-    }
-}
-
-// ----------------------
-// Test Cases
-// ----------------------
-
-// let nums1 = [3, 2, 2, 3];
-// let val1 = 3;
-
-// console.log(removeElement(nums1, val1));
-// console.log(nums1);
-
-// let nums2 = [0,1,2,2,3,0,4,2];
-// let val2 = 2;
-
-// console.log(removeElement(nums2, val2));
-// console.log(nums2);
 
 /*
 Problem:
-Given a sorted array of integers,
-return an array of squares sorted in ascending order.
+Reverse only letters, keep non-letters in place.
 
 Example:
-[-4,-1,0,3,10]
-
-Output:
-[0,1,9,16,100]
+"a-bC-d" → "d-Cb-a"
 */
 
-function sortedSquares(nums) {
-    // TODO:
-    // Use two pointers.
-    // Compare absolute values.
-    // Fill result from end to beginning.
+function reverseOnlyLetters(s) {
+    // TODO
 }
-
-// ----------------------
-// Test Cases
-// ----------------------
-
-// let nums1 = [-4, -1, 0, 3, 10];
-// console.log(sortedSquares(nums1));
-
-// let nums2 = [-7, -3, 2, 3, 11];
-// console.log(sortedSquares(nums2));
 
 /*
 Problem:
-Given a sorted array and a target,
-return the indices (1-indexed)
-of the two numbers that add up to target.
+Reverse order of words.
 
 Example:
-
-numbers = [2,7,11,15]
-target = 9
-
-Output:
-[1,2]
+"the sky is blue" → "blue is sky the"
 */
 
-function twoSum(numbers, target) {
-    // TODO:
-    // Use left and right pointers.
-    // If sum is too small -> move left.
-    // If sum is too large -> move right.
-    // Return 1-indexed positions.
+function reverseWords(s) {
+    // TODO
 }
 
-// ----------------------
-// Test Cases
-// ----------------------
+/*
+Problem:
+Reverse each word individually.
 
-// let numbers1 = [2, 7, 11, 15];
-// let target1 = 9;
+Example:
+"hello world" → "olleh dlrow"
+*/
 
-// console.log(twoSum(numbers1, target1));
+function reverseEachWord(s) {
+    // TODO
+}
 
-// let numbers2 = [2, 3, 4];
-// let target2 = 6;
+/*
+Problem:
+Reverse only vowels in a string.
 
-// console.log(twoSum(numbers2, target2));
+Example:
+"leetcode" → "leotcede"
+*/
 
-// let numbers3 = [-1, 0];
-// let target3 = -1;
+function reverseVowels(s) {
+    // TODO
+}
 
-// console.log(twoSum(numbers3, target3));
+/*
+Problem:
+Reverse the prefix of a string up to first occurrence of a given character.
+
+Example:
+word = "abcdefd", ch = "d"
+→ "dcbaefd"
+*/
+
+function reversePrefix(word, ch) {
+    // TODO
+}
+
+/*
+Problem:
+Reverse a string using recursion.
+
+Example:
+"hello" → "olleh"
+*/
+
+function reverseRecursion(s) {
+    // TODO
+}
+
+/*
+Problem:
+Reverse first k characters of a string.
+
+Example:
+"abcdef", k = 3 → "cbadef"
+*/
+
+function reverseFirstK(s, k) {
+    // TODO
+}
+
+/*
+Problem:
+Reverse only letters, keep digits unchanged in position.
+
+Example:
+"a1b2c3" → "c1b2a3"
+*/
+
+function reverseLettersKeepDigits(s) {
+    // TODO
+}
