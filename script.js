@@ -1,279 +1,246 @@
 // ==================================================
-// 1. Count Vowels From Ends
+// 1. Reverse Array (Two Pointers)
 // ==================================================
 
 /*
 Problem:
-Count how many mirrored pairs are BOTH vowels.
+Reverse an array in-place using two pointers.
 
 Input:
-"aeioua"
-
-Pairs:
-a-a  ✅
-e-u  ✅
-i-o  ✅
+let arr = [1,2,3,4,5];
 
 Output:
-3
+[5,4,3,2,1]
 */
 
-function countVowelPairs(str) {
+function reverseArray(arr) {
     // TODO
 }
 
-let str = "aeioua";
+let arr1 = [1,2,3,4,5];
+console.log(reverseArray(arr1));
 
-console.log(countVowelPairs(str));
 
 // ==================================================
-// 2. First Matching Pair
+// 2. Palindrome Check (String)
 // ==================================================
 
 /*
 Problem:
-Return the first matching pair of indexes
-found from opposite ends.
+Check if string is palindrome using two pointers.
 
 Input:
-"abccbx"
-
-Comparisons:
-a-x ❌
-b-b ✅
-
-Output:
-[1,4]
-*/
-
-function firstMatchingPair(str) {
-    // TODO
-}
-
-let str = "abccbx";
-
-console.log(firstMatchingPair(str));
-
-// ==================================================
-// 3. Count Mismatches
-// ==================================================
-
-/*
-Problem:
-Count how many mirrored pairs do NOT match.
-
-Input:
-"abcdef"
-
-Pairs:
-a-f ❌
-b-e ❌
-c-d ❌
-
-Output:
-3
-*/
-
-function countMismatches(str) {
-    // TODO
-}
-
-let str = "abcdef";
-
-console.log(countMismatches(str));
-
-// ==================================================
-// 4. Maximum Mirrored Sum
-// ==================================================
-
-/*
-Problem:
-Return the largest mirrored pair sum.
-
-Input:
-[1,4,2,8]
-
-Pairs:
-1+8 = 9
-4+2 = 6
-
-Output:
-9
-*/
-
-function maxMirroredSum(nums) {
-    // TODO
-}
-
-let nums = [1,4,2,8];
-
-console.log(maxMirroredSum(nums));
-
-// ==================================================
-// 5. Count Equal Mirrored Pairs
-// ==================================================
-
-/*
-Problem:
-Count how many mirrored pairs contain
-the exact same value.
-
-Input:
-[1,2,3,2,1]
-
-Pairs:
-1-1 ✅
-2-2 ✅
-
-Output:
-2
-*/
-
-function countEqualPairs(nums) {
-    // TODO
-}
-
-let nums = [1,2,3,2,1];
-
-console.log(countEqualPairs(nums));
-
-// ==================================================
-// 6. Remove Outer Digits
-// ==================================================
-
-/*
-Problem:
-Keep removing matching outer digits
-while they match.
-
-Input:
-"122221"
-
-Process:
-1 == 1
-2 == 2
-2 == 2
-
-Output:
-""
-*/
-
-function removeOuterDigits(str) {
-    // TODO
-}
-
-let str = "122221";
-
-console.log(removeOuterDigits(str));
-
-// ==================================================
-// 7. Reverse Only Numbers
-// ==================================================
-
-/*
-Problem:
-Reverse only the digits.
-
-Input:
-"a1b2c3"
-
-Digits:
-1,2,3
-
-Output:
-"a3b2c1"
-*/
-
-function reverseOnlyNumbers(str) {
-    // TODO
-}
-
-let str = "a1b2c3";
-
-console.log(reverseOnlyNumbers(str));
-
-// ==================================================
-// 8. Find Middle Character(s)
-// ==================================================
-
-/*
-Problem:
-Using opposite pointers,
-return the middle character(s).
-
-Input:
-"abcde"
-
-Output:
-"c"
-
-Input:
-"abcd"
-
-Output:
-"bc"
-*/
-
-function middleCharacters(str) {
-    // TODO
-}
-
-let str1 = "abcde";
-let str2 = "abcd";
-
-console.log(middleCharacters(str1));
-console.log(middleCharacters(str2));
-
-// ==================================================
-// 9. Compare Ends Score
-// ==================================================
-
-/*
-Problem:
-+1 for every matching mirrored pair.
-
-Input:
-"racecar"
-
-Pairs:
-r-r ✅
-a-a ✅
-c-c ✅
-
-Output:
-3
-*/
-
-function compareEndsScore(str) {
-    // TODO
-}
-
 let str = "racecar";
 
-console.log(compareEndsScore(str));
+Output:
+true
+*/
+
+function isPalindrome(str) {
+    // TODO
+}
+
+let str2 = "racecar";
+console.log(isPalindrome(str2));
+
 
 // ==================================================
-// 10. Reverse Only Consonants
+// 3. Count Matching Ends
 // ==================================================
 
 /*
 Problem:
-Reverse only consonants.
+Count how many mirrored pairs are equal.
 
 Input:
-"hello"
+let str = "abccba";
 
-Consonants:
-h,l,l
+Pairs:
+a-a ✔
+b-b ✔
+c-c ✔
 
 Output:
-"lelho"
+3
 */
 
-function reverseOnlyConsonants(str) {
+function countMatchingEnds(str) {
     // TODO
 }
 
-let str = "hello";
+let str3 = "abccba";
+console.log(countMatchingEnds(str3));
 
-console.log(reverseOnlyConsonants(str));
+
+// ==================================================
+// 4. Reverse Only Letters
+// ==================================================
+
+/*
+Problem:
+Reverse only letters, keep other characters in place.
+
+Input:
+let str = "a1b2c3";
+
+Output:
+"c1b2a3"
+*/
+
+function reverseOnlyLetters(str) {
+    // TODO
+}
+
+let str4 = "a1b2c3";
+console.log(reverseOnlyLetters(str4));
+
+// ==================================================
+// 5. First Mismatch Index Pair
+// ==================================================
+
+/*
+Problem:
+Return first index pair where characters differ from ends.
+
+Input:
+let str = "abca";
+
+Output:
+[1,2]
+*/
+
+function firstMismatch(str) {
+    // TODO
+}
+
+let str5 = "abca";
+console.log(firstMismatch(str5));
+
+// ==================================================
+// 6. Merge Sorted Arrays
+// ==================================================
+
+/*
+Problem:
+Merge two sorted arrays into one sorted array.
+
+Input:
+let a = [1,3,5];
+let b = [2,4,6];
+
+Output:
+[1,2,3,4,5,6]
+*/
+
+function mergeSortedArrays(a, b) {
+    // TODO
+}
+
+let a6 = [1,3,5];
+let b6 = [2,4,6];
+
+console.log(mergeSortedArrays(a6, b6));
+
+// ==================================================
+// 7. Intersection of Sorted Arrays
+// ==================================================
+
+/*
+Problem:
+Return common elements between two sorted arrays.
+
+Input:
+let a = [1,2,2,3];
+let b = [2,2,3,4];
+
+Output:
+[2,2,3]
+*/
+
+function intersectSorted(a, b) {
+    // TODO
+}
+
+let a7 = [1,2,2,3];
+let b7 = [2,2,3,4];
+
+console.log(intersectSorted(a7, b7));
+
+
+// ==================================================
+// 8. Union of Sorted Arrays
+// ==================================================
+
+/*
+Problem:
+Return all unique elements from both arrays.
+
+Input:
+let a = [1,2,3];
+let b = [2,3,4];
+
+Output:
+[1,2,3,4]
+*/
+
+function unionSorted(a, b) {
+    // TODO
+}
+
+let a8 = [1,2,3];
+let b8 = [2,3,4];
+
+console.log(unionSorted(a8, b8));
+
+
+// ==================================================
+// 9. Merge With Duplicates Allowed
+// ==================================================
+
+/*
+Problem:
+Merge arrays but keep duplicates only if they appear in either array.
+
+Input:
+let a = [1,1,2];
+let b = [1,2,2];
+
+Output:
+[1,1,2,2]
+*/
+
+function mergeWithDuplicates(a, b) {
+    // TODO
+}
+
+let a9 = [1,1,2];
+let b9 = [1,2,2];
+
+console.log(mergeWithDuplicates(a9, b9));
+
+// ==================================================
+// 10. Sorted Merge Until K Elements
+// ==================================================
+
+/*
+Problem:
+Merge two sorted arrays but only return first k elements.
+
+Input:
+let a = [1,4,7];
+let b = [2,3,6];
+let k = 4;
+
+Output:
+[1,2,3,4]
+*/
+
+function mergeUpToK(a, b, k) {
+    // TODO
+}
+
+let a10 = [1,4,7];
+let b10 = [2,3,6];
+let k10 = 4;
+
+console.log(mergeUpToK(a10, b10, k10));
